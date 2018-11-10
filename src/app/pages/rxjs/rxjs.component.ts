@@ -23,7 +23,6 @@ export class RxjsComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
   }
-
   regresaObservable(): Observable<any>{
     let contador = 0;
     const obs = new Observable ( (observer: Subscriber<any>) => {
@@ -33,7 +32,6 @@ export class RxjsComponent implements OnInit, OnDestroy {
           valor:contador
         }
         observer.next(salida);
-        
         //if(contador === 3){
         //  clearInterval(intervalo);
         //  observer.complete();
@@ -43,17 +41,16 @@ export class RxjsComponent implements OnInit, OnDestroy {
        // throw new Error();
         //observer.error('auxiliooo');
         //}
-
-
       },1000);
     }).pipe(
       map(resp=>resp.valor),
       filter((valor,index)=>{
-        //iompares
+        
         if((valor % 2)==1){
           //impar
           return true;
         }else{
+          //par
           return false;
         }
       })
