@@ -22,7 +22,10 @@ imagenTemp: string;
   cerrarModal() {
     this.imagenTemp = null;
     this.imagenSubir = null;
+<<<<<<< HEAD
     this._modalUploadService.ocultarModal();
+=======
+>>>>>>> d3293d44ab6e6524280ec82a423345458b76695b
   }
   
   seleccionImage(archivo: File) {

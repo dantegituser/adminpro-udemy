@@ -10,7 +10,10 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { LoginGuardGuard } from '../services/service.index';
 import { ProfileComponent } from './profile/profile.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+<<<<<<< HEAD
 import { HospitalesComponent } from './hospitales/hospitales.component';
+=======
+>>>>>>> d3293d44ab6e6524280ec82a423345458b76695b
 
 
 const pagesRoutes: Routes = [
@@ -28,7 +31,10 @@ const pagesRoutes: Routes = [
                {path: 'rxjs', component: RxjsComponent,data:{titulo:'Rxjs'}},
                // mantenimientos
                {path: 'usuarios', component: UsuariosComponent, data:{titulo:'Mantenimiento de usuarios'}},
+<<<<<<< HEAD
                {path: 'hospitales', component: HospitalesComponent, data:{titulo:'Mantenimiento de hospitales'}},
+=======
+>>>>>>> d3293d44ab6e6524280ec82a423345458b76695b
                {path: '', redirectTo: '/dashboard', pathMatch: 'full'}
           ]
      }
