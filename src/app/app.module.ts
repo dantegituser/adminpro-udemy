@@ -20,6 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //los servicios
 import { ServiceModule } from './services/service.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
