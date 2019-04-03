@@ -12,6 +12,7 @@ AdminGuard,
 LoginGuardGuard,
 HospitalService,
 MedicoService,
+VerificaTokenGuard,
 SubirArchivoService } from './service.index';
 
 
@@ -29,7 +30,8 @@ SubirArchivoService } from './service.index';
   SubirArchivoService,
   ModalUploadService,
   HospitalService,
-  MedicoService
+  MedicoService,
+  VerificaTokenGuard
   ],
   declarations: []
 })
